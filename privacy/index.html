@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kita — Privacy Policy</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
   <script>
     tailwind.config = {
       theme: {
@@ -138,7 +139,7 @@
 
         <div class="rounded-lg p-4" style="background:#161018;border:1px solid rgba(255,255,255,0.05)">
           <div class="flex items-start gap-3">
-            <span class="text-lg mt-0.5">🪪</span>
+            <span class="text-lg mt-0.5"><i data-lucide="fingerprint" class="w-6 h-6 text-red3 mt-0.5 flex-shrink-0"></i></span>
             <div>
               <p class="text-white font-semibold text-sm mb-1">User IDs</p>
               <p class="text-gray-400 text-sm font-light leading-relaxed">Your Discord User ID is stored to identify your account, link it to your card collection, track your pull history, and manage your in-game economy (coins, inventory, pity counters). This is a numeric identifier provided by Discord and contains no personally identifiable information.</p>
@@ -148,7 +149,7 @@
 
         <div class="rounded-lg p-4" style="background:#161018;border:1px solid rgba(255,255,255,0.05)">
           <div class="flex items-start gap-3">
-            <span class="text-lg mt-0.5">🏠</span>
+            <span class="text-lg mt-0.5"><i data-lucide="server" class="w-6 h-6 text-red3 mt-0.5 flex-shrink-0"></i></span>
             <div>
               <p class="text-white font-semibold text-sm mb-1">Server IDs</p>
               <p class="text-gray-400 text-sm font-light leading-relaxed">Discord Server (Guild) IDs are stored to maintain per-server configurations, leaderboards, and server-specific gameplay settings. This allows Kita to function correctly across multiple servers without mixing data between communities.</p>
@@ -158,7 +159,7 @@
 
         <div class="rounded-lg p-4" style="background:#161018;border:1px solid rgba(255,255,255,0.05)">
           <div class="flex items-start gap-3">
-            <span class="text-lg mt-0.5">💬</span>
+            <span class="text-lg mt-0.5"><i data-lucide="message-square-quote" class="w-6 h-6 text-red3 mt-0.5 flex-shrink-0"></i></span>
             <div>
               <p class="text-white font-semibold text-sm mb-1">Message Content <span class="font-mono text-xs ml-1 px-1.5 py-0.5 rounded" style="color:#ff8a8f;background:rgba(212,34,42,0.1)">(command processing only)</span></p>
               <p class="text-gray-400 text-sm font-light leading-relaxed">Kita uses the <strong class="text-gray-300">Message Content Intent</strong> solely to detect and process prefix-based commands (e.g., <code class="font-mono text-xs px-1.5 py-0.5 rounded text-red-300" style="background:#1c181b">!pull</code>, <code class="font-mono text-xs px-1.5 py-0.5 rounded text-red-300" style="background:#1c181b">!collection</code>). Message content is read transiently in memory to parse commands and is <strong class="text-gray-300">never written to disk, logged, or retained</strong> in any form after the command has been processed.</p>
