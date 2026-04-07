@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kita — Terms of Service</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            bg:      '#08050a',
+            surface: '#100c12',
+            card:    '#161018',
+            border:  'rgba(255,255,255,0.07)',
+            red:     '#d4222a',
+            red2:    '#ff4a52',
+            red3:    '#ff8a8f',
+          },
+          fontFamily: {
+            sans: ['Figtree', 'system-ui', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          },
+        },
+      },
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    body { background-color: #08050a; }
+    .red-glow { box-shadow: 0 0 24px rgba(212,34,42,0.25); }
+    .section-anchor { scroll-margin-top: 80px; }
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+    ::-webkit-scrollbar-thumb { background: #2a2030; border-radius: 3px; }
+  </style>
+</head>
+<body class="font-sans text-gray-200 antialiased min-h-screen">
+
+  <!-- NAV -->
+  <header class="fixed top-0 left-0 right-0 z-50 border-b" style="background:rgba(8,5,10,0.88);backdrop-filter:blur(20px);border-color:rgba(255,255,255,0.07)">
+    <div class="max-w-5xl mx-auto px-6 h-14 flex items-center justify-between">
+      <a href="../" class="flex items-center gap-2.5 text-white no-underline">
+        <img src="../kita-logo.png" alt="Kita Logo" class="w-7 h-7 rounded-lg red-glow object-cover" style="border: 1px solid rgba(212,34,42,0.3)">
+        <span class="font-extrabold text-lg tracking-tight">kita</span>
+      </a>
+      <nav class="flex items-center gap-1">
+        <a href="../privacy/" class="font-mono text-xs px-3 py-1.5 rounded-md transition-colors" style="color:rgba(255,255,255,0.4);border:1px solid rgba(255,255,255,0.07)">Privacy Policy</a>
+        <a href="./" class="font-mono text-xs px-3 py-1.5 rounded-md transition-colors font-medium" style="background:rgba(212,34,42,0.15);color:#ff8a8f;border:1px solid rgba(212,34,42,0.3)">Terms of Service</a>
+      </nav>
+    </div>
+ </header>
+
+  <!-- HERO -->
+  <section class="pt-32 pb-16 px-6 text-center relative overflow-hidden">
+    <div class="absolute inset-0 pointer-events-none" style="background:radial-gradient(ellipse 60% 40% at 50% 0%, rgba(212,34,42,0.1) 0%, transparent 70%)"></div>
+    <div class="relative z-10 max-w-2xl mx-auto">
+      <span class="inline-flex items-center gap-2 font-mono text-xs tracking-widest uppercase mb-5 px-3 py-1.5 rounded-full" style="color:#ff8a8f;background:rgba(212,34,42,0.08);border:1px solid rgba(212,34,42,0.2)">
+        <span class="w-1.5 h-1.5 rounded-full bg-red-400 animate-pulse"></span>
+        Legal Document
+      </span>
+      <h1 class="text-4xl sm:text-5xl font-black tracking-tight text-white mb-4">Terms of Service</h1>
+      <p class="text-base text-gray-400 font-light leading-relaxed">
+        The rules and conditions for using <span class="text-white font-semibold">kita</span>. Please read carefully before playing.
+      </p>
+      <p class="font-mono text-xs mt-4" style="color:rgba(255,255,255,0.25)">Last updated: June 2026 · Effective immediately</p>
+    </div>
+  </section>
+
+  <!-- AGREEMENT BANNER -->
+  <div class="max-w-5xl mx-auto px-6 mb-8">
+    <div class="rounded-xl p-5 flex items-start gap-4" style="background:rgba(212,34,42,0.05);border:1px solid rgba(212,34,42,0.2)">
+      <span class="text-2xl mt-0.5 flex-shrink-0">📋</span>
+      <div>
+        <p class="text-white font-semibold text-sm mb-1">Agreement to Terms</p>
+        <p class="text-gray-400 text-sm font-light leading-relaxed">By adding Kita to your server or using any of its commands, you acknowledge that you have read, understood, and agree to be bound by these Terms of Service. If you do not agree, please remove Kita from your server and discontinue use immediately.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOC -->
+  <div class="max-w-5xl mx-auto px-6 mb-12">
+    <div class="rounded-xl p-6" style="background:#100c12;border:1px solid rgba(255,255,255,0.07)">
+      <p class="font-mono text-xs text-gray-500 uppercase tracking-widest mb-4">Contents</p>
+      <div class="grid sm:grid-cols-2 gap-2">
+        <a href="#eligibility"   class="flex items-center gap-3 text-sm text-gray-400 hover:text-white transition-colors">
+          <span class="font-mono text-xs w-5" style="color:#d4222a">01</span> Eligibility
+        </a>
+        <a href="#acceptable"    class="flex items-center gap-3 text-sm text-gray-400 hover:text-white transition-colors">
+          <span class="font-mono text-xs w-5" style="color:#d4222a">02</span> Acceptable Use
+        </a>
+        <a href="#prohibited"    class="flex items-center gap-3 text-sm text-gray-400 hover:text-white transition-colors">
+          <span class="font-mono text-xs w-5" style="color:#d4222a">03</span> Prohibited Conduct
+        </a>
+        <a href="#selfbot"       class="flex items-center gap-3 text-sm text-gray-400 hover:text-white transition-colors">
+          <span class="font-mono text-xs w-5" style="color:#d4222a">04</span> Self-Botting & Automation
+        </a>
+        <a href="#rmt"           class="flex items-center gap-3 text-sm text-gray-400 hover:text-white transition-colors">
+          <span class="font-mono text-xs w-5" style="color:#d4222a">05</span> Real-Money Trading (RMT)
+        </a>
+        <a href="#enforcement"   class="flex items-center gap-3 text-sm text-gray-400 hover:text-white transition-colors">
+          <span class="font-mono text-xs w-5" style="color:#d4222a">06</span> Enforcement & Blacklisting
+        </a>
+        <a href="#virtual"       class="flex items-center gap-3 text-sm text-gray-400 hover:text-white transition-colors">
+          <span class="font-mono text-xs w-5" style="color:#d4222a">07</span> Virtual Items & Economy
+        </a>
+        <a href="#availability"  class="flex items-center gap-3 text-sm text-gray-400 hover:text-white transition-colors">
+          <span class="font-mono text-xs w-5" style="color:#d4222a">08</span> Service Availability
+        </a>
+        <a href="#disclaimer"    class="flex items-center gap-3 text-sm text-gray-400 hover:text-white transition-colors">
+          <span class="font-mono text-xs w-5" style="color:#d4222a">09</span> As-Is Disclaimer
+        </a>
+        <a href="#liability"     class="flex items-center gap-3 text-sm text-gray-400 hover:text-white transition-colors">
+          <span class="font-mono text-xs w-5" style="color:#d4222a">10</span> Limitation of Liability
+        </a>
+        <a href="#discord-tos"   class="flex items-center gap-3 text-sm text-gray-400 hover:text-white transition-colors">
+          <span class="font-mono text-xs w-5" style="color:#d4222a">11</span> Discord's Terms
+        </a>
+        <a href="#changes-tos"   class="flex items-center gap-3 text-sm text-gray-400 hover:text-white transition-colors">
+          <span class="font-mono text-xs w-5" style="color:#d4222a">12</span> Changes to Terms
+        </a>
+        <a href="#contact-tos"   class="flex items-center gap-3 text-sm text-gray-400 hover:text-white transition-colors">
+          <span class="font-mono text-xs w-5" style="color:#d4222a">13</span> Contact
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTENT -->
+  <main class="max-w-5xl mx-auto px-6 pb-24 space-y-8">
+
+    <!-- 01 Eligibility -->
+    <div id="eligibility" class="rounded-xl p-8 section-anchor" style="background:#100c12;border:1px solid rgba(255,255,255,0.07)">
+      <div class="flex items-center gap-3 mb-5">
+        <span class="font-mono text-xs font-medium px-2 py-0.5 rounded" style="color:#d4222a;background:rgba(212,34,42,0.1);border:1px solid rgba(212,34,42,0.2)">01</span>
+        <h2 class="text-xl font-bold tracking-tight text-white">Eligibility</h2>
+      </div>
+      <div class="space-y-3 text-gray-400 text-sm leading-relaxed font-light">
+        <p>To use Kita, you must meet the minimum age requirement established by Discord's Terms of Service (13 years of age, or older depending on your country). By using Kita, you represent and warrant that you meet this requirement.</p>
+        <p>Kita is intended for use on Discord servers. Server administrators who add Kita to their server represent that they have the authority to do so and agree to ensure their members are made aware of these Terms.</p>
+      </div>
+    </div>
+
+    <!-- 02 Acceptable Use -->
+    <div id="acceptable" class="rounded-xl p-8 section-anchor" style="background:#100c12;border:1px solid rgba(255,255,255,0.07)">
+      <div class="flex items-center gap-3 mb-5">
+        <span class="font-mono text-xs font-medium px-2 py-0.5 rounded" style="color:#d4222a;background:rgba(212,34,42,0.1);border:1px solid rgba(212,34,42,0.2)">02</span>
+        <h2 class="text-xl font-bold tracking-tight text-white">Acceptable Use</h2>
+      </div>
+      <p class="text-gray-400 text-sm leading-relaxed font-light mb-5">You agree to use Kita only for its intended purpose — playing the gacha card collection game — and in compliance with all applicable laws and Discord's own Terms of Service. Acceptable use includes:</p>
+      <ul class="space-y-3">
+        <li class="flex items-start gap-3 text-sm text-gray-400 font-light">
+          <span class="mt-1 w-1.5 h-1.5 rounded-full flex-shrink-0" style="background:#4ade80"></span>
+          Using bot commands to pull cards, manage your collection, and trade with other users
+        </li>
+        <li class="flex items-start gap-3 text-sm text-gray-400 font-light">
+          <span class="mt-1 w-1.5 h-1.5 rounded-full flex-shrink-0" style="background:#4ade80"></span>
+          Competing on leaderboards in good faith
+        </li>
+        <li class="flex items-start gap-3 text-sm text-gray-400 font-light">
+          <span class="mt-1 w-1.5 h-1.5 rounded-full flex-shrink-0" style="background:#4ade80"></span>
+          Trading cards and in-game currency with other players for in-game value only
+        </li>
+        <li class="flex items-start gap-3 text-sm text-gray-400 font-light">
+          <span class="mt-1 w-1.5 h-1.5 rounded-full flex-shrink-0" style="background:#4ade80"></span>
+          Reporting bugs or exploits through proper channels (support server)
+        </li>
+        <li class="flex items-start gap-3 text-sm text-gray-400 font-light">
+          <span class="mt-1 w-1.5 h-1.5 rounded-full flex-shrink-0" style="background:#4ade80"></span>
+          Using the bot respectfully within the communities you are part of
+        </li>
+      </ul>
+    </div>
+
+    <!-- 03 Prohibited Conduct -->
+    <div id="prohibited" class="rounded-xl p-8 section-anchor" style="background:#100c12;border:1px solid rgba(255,255,255,0.07)">
+      <div class="flex items-center gap-3 mb-5">
+        <span class="font-mono text-xs font-medium px-2 py-0.5 rounded" style="color:#d4222a;background:rgba(212,34,42,0.1);border:1px solid rgba(212,34,42,0.2)">03</span>
+        <h2 class="text-xl font-bold tracking-tight text-white">Prohibited Conduct</h2>
+      </div>
+      <p class="text-gray-400 text-sm leading-relaxed font-light mb-5">The following behaviors are strictly prohibited and may result in an immediate permanent blacklist. This list is non-exhaustive — the developer reserves the right to take action against any behavior deemed harmful to the bot, its players, or its community.</p>
+      <div class="space-y-3">
+        <div class="rounded-lg p-4 flex items-start gap-3" style="background:#161018;border:1px solid rgba(212,34,42,0.15)">
+          <span class="text-red-400 mt-0.5 flex-shrink-0">✗</span>
+          <p class="text-sm text-gray-400 font-light"><strong class="text-white">Exploiting bugs or glitches</strong> to gain unfair advantages, duplicate items, or generate in-game currency illegitimately</p>
+        </div>
+        <div class="rounded-lg p-4 flex items-start gap-3" style="background:#161018;border:1px solid rgba(212,34,42,0.15)">
+          <span class="text-red-400 mt-0.5 flex-shrink-0">✗</span>
+          <p class="text-sm text-gray-400 font-light"><strong class="text-white">Self-botting or automated farming</strong> of any kind — see Section 04 for full details</p>
+        </div>
+        <div class="rounded-lg p-4 flex items-start gap-3" style="background:#161018;border:1px solid rgba(212,34,42,0.15)">
+          <span class="text-red-400 mt-0.5 flex-shrink-0">✗</span>
+          <p class="text-sm text-gray-400 font-light"><strong class="text-white">Real-money trading (RMT)</strong> of in-game items — see Section 05 for full details</p>
+        </div>
+        <div class="rounded-lg p-4 flex items-start gap-3" style="background:#161018;border:1px solid rgba(212,34,42,0.15)">
+          <span class="text-red-400 mt-0.5 flex-shrink-0">✗</span>
+          <p class="text-sm text-gray-400 font-light"><strong class="text-white">Harassing other users</strong> through Kita's features, including unsolicited trade spam or abuse of the gifting system</p>
+        </div>
+        <div class="rounded-lg p-4 flex items-start gap-3" style="background:#161018;border:1px solid rgba(212,34,42,0.15)">
+          <span class="text-red-400 mt-0.5 flex-shrink-0">✗</span>
+          <p class="text-sm text-gray-400 font-light"><strong class="text-white">Attempting to reverse-engineer</strong> or manipulate Kita's backend, database, or pull rate system</p>
+        </div>
+        <div class="rounded-lg p-4 flex items-start gap-3" style="background:#161018;border:1px solid rgba(212,34,42,0.15)">
+          <span class="text-red-400 mt-0.5 flex-shrink-0">✗</span>
+          <p class="text-sm text-gray-400 font-light"><strong class="text-white">Impersonating the developer</strong> or Kita staff members in any context</p>
+        </div>
+        <div class="rounded-lg p-4 flex items-start gap-3" style="background:#161018;border:1px solid rgba(212,34,42,0.15)">
+          <span class="text-red-400 mt-0.5 flex-shrink-0">✗</span>
+          <p class="text-sm text-gray-400 font-light"><strong class="text-white">Creating multiple accounts</strong> to circumvent a blacklist or gain additional daily rewards</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 04 Self-Botting -->
+    <div id="selfbot" class="rounded-xl p-8 section-anchor" style="border:1px solid rgba(212,34,42,0.3);background:rgba(212,34,42,0.04)">
+      <div class="flex items-center gap-3 mb-2">
+        <span class="font-mono text-xs font-medium px-2 py-0.5 rounded" style="color:#d4222a;background:rgba(212,34,42,0.1);border:1px solid rgba(212,34,42,0.2)">04</span>
+        <h2 class="text-xl font-bold tracking-tight text-white">Self-Botting & Automated Farming</h2>
+        <span class="font-mono text-xs px-2 py-0.5 rounded" style="color:#ff4a52;background:rgba(212,34,42,0.15);border:1px solid rgba(212,34,42,0.3)">ZERO TOLERANCE</span>
+      </div>
+      <p class="text-xs font-mono mb-5" style="color:rgba(255,255,255,0.3)">Violation of this section results in an immediate permanent blacklist.</p>
+      <div class="space-y-4 text-gray-400 text-sm leading-relaxed font-light">
+        <p><strong class="text-white">"Self-botting"</strong> refers to the use of a user account (not a bot account) to send automated messages or commands, or the use of any script, macro, program, or tool to automate interactions with Kita on your behalf.</p>
+        <p><strong class="text-white">"Automated farming"</strong> refers to any method of triggering Kita's reward systems — including but not limited to daily pulls, coin collection, or activity bonuses — without genuine manual user interaction.</p>
+        <p>Examples of prohibited automation include, but are not limited to:</p>
+        <ul class="space-y-2 mt-2">
+          <li class="flex items-start gap-3">
+            <span class="mt-1 w-1.5 h-1.5 rounded-full flex-shrink-0" style="background:#d4222a"></span>
+            Using a selfbot, auto-typer, keyboard macro, or similar tool to send commands automatically
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="mt-1 w-1.5 h-1.5 rounded-full flex-shrink-0" style="background:#d4222a"></span>
+            Writing or using scripts that interact with Discord's API using a user token to trigger Kita
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="mt-1 w-1.5 h-1.5 rounded-full flex-shrink-0" style="background:#d4222a"></span>
+            Using browser automation tools (e.g., Selenium) to send commands while AFK
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="mt-1 w-1.5 h-1.5 rounded-full flex-shrink-0" style="background:#d4222a"></span>
+            Coordinating with others to abuse multi-account farming on a single user's behalf
+          </li>
+        </ul>
+        <div class="rounded-lg p-4 mt-3" style="background:rgba(0,0,0,0.3);border:1px solid rgba(212,34,42,0.2)">
+          <p class="font-mono text-xs" style="color:#ff8a8f">Users found to be engaging in self-botting or automated farming will be <strong>permanently blacklisted</strong> with no appeal. Their in-game data will not be restored under any circumstances. We reserve the right to take further action including reporting to Discord Trust & Safety if the method used violates Discord's own Terms of Service.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 05 RMT -->
+    <div id="rmt" class="rounded-xl p-8 section-anchor" style="border:1px solid rgba(212,34,42,0.3);background:rgba(212,34,42,0.04)">
+      <div class="flex items-center gap-3 mb-2">
+        <span class="font-mono text-xs font-medium px-2 py-0.5 rounded" style="color:#d4222a;background:rgba(212,34,42,0.1);border:1px solid rgba(212,34,42,0.2)">05</span>
+        <h2 class="text-xl font-bold tracking-tight text-white">Real-Money Trading (RMT)</h2>
+        <span class="font-mono text-xs px-2 py-0.5 rounded" style="color:#ff4a52;background:rgba(212,34,42,0.15);border:1px solid rgba(212,34,42,0.3)">PROHIBITED</span>
+      </div>
+      <p class="text-xs font-mono mb-5" style="color:rgba(255,255,255,0.3)">Violation of this section results in a permanent blacklist of all accounts involved.</p>
+      <div class="space-y-4 text-gray-400 text-sm leading-relaxed font-light">
+        <p>All items within Kita — including cards, in-game currency, collectibles, and any other virtual goods — have <strong class="text-white">no real-world monetary value</strong>. They are virtual assets provided solely for the purpose of gameplay and entertainment.</p>
+        <p><strong class="text-white">Real-Money Trading (RMT)</strong> is the exchange of in-game items, cards, currency, or accounts for real-world currency, cryptocurrency, gift cards, goods, services, or any other item of real-world value. RMT is <strong class="text-white">strictly prohibited</strong> in all forms.</p>
+        <p>Prohibited RMT activities include, but are not limited to:</p>
+        <ul class="space-y-2 mt-2">
+          <li class="flex items-start gap-3">
+            <span class="mt-1 w-1.5 h-1.5 rounded-full flex-shrink-0" style="background:#d4222a"></span>
+            Selling or auctioning Kita cards or in-game currency for real money on any platform
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="mt-1 w-1.5 h-1.5 rounded-full flex-shrink-0" style="background:#d4222a"></span>
+            Selling or transferring your Kita account for real-world compensation
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="mt-1 w-1.5 h-1.5 rounded-full flex-shrink-0" style="background:#d4222a"></span>
+            Buying in-game items from another user in exchange for real-world goods or services
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="mt-1 w-1.5 h-1.5 rounded-full flex-shrink-0" style="background:#d4222a"></span>
+            Advertising or facilitating RMT transactions in any Discord server
+          </li>
+        </ul>
+        <p>The developer makes no guarantees about the continued availability of any virtual items and will not compensate users for lost, deleted, or reset in-game assets under any circumstances.</p>
+      </div>
+    </div>
+
+    <!-- 06 Enforcement -->
+    <div id="enforcement" class="rounded-xl p-8 section-anchor" style="background:#100c12;border:1px solid rgba(255,255,255,0.07)">
+      <div class="flex items-center gap-3 mb-5">
+        <span class="font-mono text-xs font-medium px-2 py-0.5 rounded" style="color:#d4222a;background:rgba(212,34,42,0.1);border:1px solid rgba(212,34,42,0.2)">06</span>
+        <h2 class="text-xl font-bold tracking-tight text-white">Enforcement & Blacklisting</h2>
+      </div>
+      <div class="space-y-4 text-gray-400 text-sm leading-relaxed font-light">
+        <p>The developer reserves the right to <strong class="text-white">blacklist any user or server</strong> from accessing Kita at any time, for any reason, with or without prior notice, including but not limited to violations of these Terms, suspected exploitation, cheating, or behavior deemed harmful to the community.</p>
+        <p>Blacklisting may be applied at the <strong class="text-white">user level</strong> (preventing a specific user from using any Kita commands) or the <strong class="text-white">server level</strong> (removing Kita's functionality from an entire server).</p>
+        <div class="grid sm:grid-cols-3 gap-3 mt-4">
+          <div class="rounded-lg p-4 text-center" style="background:#161018;border:1px solid rgba(255,255,255,0.05)">
+            <div class="text-2xl mb-2">⚠️</div>
+            <p class="text-white font-semibold text-sm mb-1">Warning</p>
+            <p class="text-xs text-gray-500 font-light">Minor first-time violations may receive a warning at the developer's discretion</p>
+          </div>
+          <div class="rounded-lg p-4 text-center" style="background:#161018;border:1px solid rgba(255,255,255,0.05)">
+            <div class="text-2xl mb-2">⏸️</div>
+            <p class="text-white font-semibold text-sm mb-1">Temporary Ban</p>
+            <p class="text-xs text-gray-500 font-light">Moderate violations may result in a temporary suspension from Kita</p>
+          </div>
+          <div class="rounded-lg p-4 text-center" style="background:#161018;border:1px solid rgba(212,34,42,0.15)">
+            <div class="text-2xl mb-2">🚫</div>
+            <p class="font-semibold text-sm mb-1" style="color:#ff4a52">Permanent Blacklist</p>
+            <p class="text-xs text-gray-500 font-light">Severe violations (selfbot, RMT, exploits) result in an immediate permanent ban</p>
+          </div>
+        </div>
+        <p class="mt-4">Blacklisted users may <strong class="text-white">not</strong> circumvent their blacklist by using alternative accounts. Discovery of alt account usage will result in those accounts being blacklisted as well.</p>
+        <p>Enforcement decisions are made at the sole discretion of the developer. While we aim to be fair, we are not obligated to provide detailed explanations for all enforcement actions. If you believe you have been blacklisted in error, you may appeal by contacting us through the support server.</p>
+      </div>
+    </div>
+
+    <!-- 07 Virtual Items -->
+    <div id="virtual" class="rounded-xl p-8 section-anchor" style="background:#100c12;border:1px solid rgba(255,255,255,0.07)">
+      <div class="flex items-center gap-3 mb-5">
+        <span class="font-mono text-xs font-medium px-2 py-0.5 rounded" style="color:#d4222a;background:rgba(212,34,42,0.1);border:1px solid rgba(212,34,42,0.2)">07</span>
+        <h2 class="text-xl font-bold tracking-tight text-white">Virtual Items & Economy</h2>
+      </div>
+      <div class="space-y-3 text-gray-400 text-sm leading-relaxed font-light">
+        <p>All cards, currencies, collectibles, and other virtual items within Kita are <strong class="text-white">virtual goods with no real-world monetary value</strong>. They are licensed to you for personal, non-commercial, in-game use only.</p>
+        <p>You do not "own" virtual items in the legal sense. The developer retains all rights to all virtual content and may modify, remove, or reset any in-game items or economy at any time, for any reason, including:</p>
+        <ul class="space-y-2 mt-2">
+          <li class="flex items-start gap-3">
+            <span class="mt-1 w-1.5 h-1.5 rounded-full flex-shrink-0" style="background:#d4222a"></span>
+            Game rebalancing or economy resets
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="mt-1 w-1.5 h-1.5 rounded-full flex-shrink-0" style="background:#d4222a"></span>
+            Correcting the effects of exploits or duplication bugs
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="mt-1 w-1.5 h-1.5 rounded-full flex-shrink-0" style="background:#d4222a"></span>
+            Discontinuation or significant overhaul of the bot
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="mt-1 w-1.5 h-1.5 rounded-full flex-shrink-0" style="background:#d4222a"></span>
+            Actions taken as a result of Terms of Service violations
+          </li>
+        </ul>
+        <p>No compensation, refund, or alternative will be provided for lost, modified, or deleted virtual items in any scenario.</p>
+      </div>
+    </div>
+
+    <!-- 08 Availability -->
+    <div id="availability" class="rounded-xl p-8 section-anchor" style="background:#100c12;border:1px solid rgba(255,255,255,0.07)">
+      <div class="flex items-center gap-3 mb-5">
+        <span class="font-mono text-xs font-medium px-2 py-0.5 rounded" style="color:#d4222a;background:rgba(212,34,42,0.1);border:1px solid rgba(212,34,42,0.2)">08</span>
+        <h2 class="text-xl font-bold tracking-tight text-white">Service Availability</h2>
+      </div>
+      <div class="space-y-3 text-gray-400 text-sm leading-relaxed font-light">
+        <p>Kita is provided as-is and we make no guarantees of continuous, uninterrupted service. The bot may experience downtime due to maintenance, Discord API issues, server outages, or other unforeseen circumstances.</p>
+        <p>The developer reserves the right to modify, suspend, or permanently discontinue Kita at any time without prior notice. We will make reasonable efforts to announce planned maintenance in the support server.</p>
+        <p>We are not liable for any loss of in-game progress, data, or items resulting from downtime, outages, or service discontinuation.</p>
+      </div>
+    </div>
+
+    <!-- 09 As-Is Disclaimer -->
+    <div id="disclaimer" class="rounded-xl p-8 section-anchor" style="background:#100c12;border:1px solid rgba(255,255,255,0.07)">
+      <div class="flex items-center gap-3 mb-5">
+        <span class="font-mono text-xs font-medium px-2 py-0.5 rounded" style="color:#d4222a;background:rgba(212,34,42,0.1);border:1px solid rgba(212,34,42,0.2)">09</span>
+        <h2 class="text-xl font-bold tracking-tight text-white">As-Is Disclaimer</h2>
+      </div>
+      <div class="space-y-4 text-gray-400 text-sm leading-relaxed font-light">
+        <div class="rounded-lg p-5" style="background:#161018;border:1px solid rgba(255,255,255,0.08)">
+          <p class="font-mono text-xs leading-relaxed" style="color:#b5b5c0">KITA IS PROVIDED <strong class="text-white">"AS IS"</strong> AND <strong class="text-white">"AS AVAILABLE"</strong> WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. THE DEVELOPER DOES NOT WARRANT THAT THE BOT WILL BE ERROR-FREE, UNINTERRUPTED, SECURE, OR THAT ANY DEFECTS WILL BE CORRECTED.</p>
+        </div>
+        <p>In plain language: Kita is a passion project developed and maintained by an independent developer. While we strive to provide a high-quality experience, bugs will happen, downtime will occur, and the bot is not perfect. By using Kita, you accept it as it currently is, with all its imperfections.</p>
+      </div>
+    </div>
+
+    <!-- 10 Limitation of Liability -->
+    <div id="liability" class="rounded-xl p-8 section-anchor" style="background:#100c12;border:1px solid rgba(255,255,255,0.07)">
+      <div class="flex items-center gap-3 mb-5">
+        <span class="font-mono text-xs font-medium px-2 py-0.5 rounded" style="color:#d4222a;background:rgba(212,34,42,0.1);border:1px solid rgba(212,34,42,0.2)">10</span>
+        <h2 class="text-xl font-bold tracking-tight text-white">Limitation of Liability</h2>
+      </div>
+      <div class="space-y-3 text-gray-400 text-sm leading-relaxed font-light">
+        <p>To the fullest extent permitted by applicable law, the developer shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including but not limited to loss of data, loss of in-game progress, or any other intangible losses resulting from your use of or inability to use Kita.</p>
+        <p>The developer's total liability to you for any claims arising out of or related to Kita shall not exceed zero dollars ($0.00), as Kita is provided entirely free of charge.</p>
+      </div>
+    </div>
+
+    <!-- 11 Discord's Terms -->
+    <div id="discord-tos" class="rounded-xl p-8 section-anchor" style="background:#100c12;border:1px solid rgba(255,255,255,0.07)">
+      <div class="flex items-center gap-3 mb-5">
+        <span class="font-mono text-xs font-medium px-2 py-0.5 rounded" style="color:#d4222a;background:rgba(212,34,42,0.1);border:1px solid rgba(212,34,42,0.2)">11</span>
+        <h2 class="text-xl font-bold tracking-tight text-white">Discord's Terms of Service</h2>
+      </div>
+      <div class="space-y-3 text-gray-400 text-sm leading-relaxed font-light">
+        <p>Kita operates on the Discord platform and is subject to Discord's <a href="https://discord.com/terms" class="underline decoration-red-500/50 hover:decoration-red-400 transition-colors" style="color:#ff8a8f">Terms of Service</a> and <a href="https://discord.com/guidelines" class="underline decoration-red-500/50 hover:decoration-red-400 transition-colors" style="color:#ff8a8f">Community Guidelines</a>. All users of Kita must also comply with Discord's terms.</p>
+        <p>Any behavior that violates Discord's Terms of Service — regardless of whether it is explicitly listed in these Terms — may also result in enforcement action against your Kita account, including blacklisting.</p>
+        <p>These Terms of Service are intended to supplement, not replace, Discord's own rules and policies.</p>
+      </div>
+    </div>
+
+    <!-- 12 Changes -->
+    <div id="changes-tos" class="rounded-xl p-8 section-anchor" style="background:#100c12;border:1px solid rgba(255,255,255,0.07)">
+      <div class="flex items-center gap-3 mb-5">
+        <span class="font-mono text-xs font-medium px-2 py-0.5 rounded" style="color:#d4222a;background:rgba(212,34,42,0.1);border:1px solid rgba(212,34,42,0.2)">12</span>
+        <h2 class="text-xl font-bold tracking-tight text-white">Changes to Terms</h2>
+      </div>
+      <div class="space-y-3 text-gray-400 text-sm leading-relaxed font-light">
+        <p>We reserve the right to modify these Terms of Service at any time. Material changes will be announced in the official Kita support server and the "Last updated" date at the top of this page will be revised accordingly.</p>
+        <p>Continued use of Kita following any changes to these Terms constitutes your acceptance of the new terms. If you do not agree with the revised terms, you must discontinue use of Kita.</p>
+      </div>
+    </div>
+
+    <!-- 13 Contact -->
+    <div id="contact-tos" class="rounded-xl p-8 section-anchor" style="background:#100c12;border:1px solid rgba(255,255,255,0.07)">
+      <div class="flex items-center gap-3 mb-5">
+        <span class="font-mono text-xs font-medium px-2 py-0.5 rounded" style="color:#d4222a;background:rgba(212,34,42,0.1);border:1px solid rgba(212,34,42,0.2)">13</span>
+        <h2 class="text-xl font-bold tracking-tight text-white">Contact</h2>
+      </div>
+      <p class="text-gray-400 text-sm leading-relaxed font-light mb-5">If you have questions about these Terms, wish to report a violation, or wish to appeal an enforcement action, please contact us through one of the following channels:</p>
+      <div class="grid sm:grid-cols-2 gap-4">
+        <div class="rounded-lg p-4" style="background:#161018;border:1px solid rgba(255,255,255,0.05)">
+          <p class="text-white font-semibold text-sm mb-1">Support Server</p>
+          <p class="text-gray-400 text-sm font-light">Join the official Kita Discord server and open a support ticket. This is the fastest way to reach us.</p>
+        </div>
+        <div class="rounded-lg p-4" style="background:#161018;border:1px solid rgba(255,255,255,0.05)">
+          <p class="text-white font-semibold text-sm mb-1">Developer Contact</p>
+          <p class="text-gray-400 text-sm font-light">For blacklist appeals or sensitive matters, contact the developer directly via Discord DM.</p>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="border-t" style="border-color:rgba(255,255,255,0.07)">
+    <div class="max-w-5xl mx-auto px-6 py-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-2">
+        <div class="w-6 h-6 rounded-md flex items-center justify-center text-white font-black text-xs red-glow" style="background:#d4222a">K</div>
+        <span class="font-extrabold text-sm tracking-tight text-white">kita</span>
+      </div>
+      <div class="flex items-center gap-6">
+        <a href="privacy.html" class="font-mono text-xs text-gray-500 hover:text-gray-300 transition-colors">Privacy Policy</a>
+        <a href="tos.html" class="font-mono text-xs transition-colors" style="color:#ff8a8f">Terms of Service</a>
+      </div>
+      <p class="font-mono text-xs text-gray-600">© 2026 Kita. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kita — Privacy Policy</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            bg:      '#08050a',
+            surface: '#100c12',
+            card:    '#161018',
+            border:  'rgba(255,255,255,0.07)',
+            red:     '#d4222a',
+            red2:    '#ff4a52',
+            red3:    '#ff8a8f',
+          },
+          fontFamily: {
+            sans: ['Figtree', 'system-ui', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          },
+        },
+      },
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    body { background-color: #08050a; }
+    .red-glow { box-shadow: 0 0 24px rgba(212,34,42,0.25); }
+    .section-anchor { scroll-margin-top: 80px; }
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+    ::-webkit-scrollbar-thumb { background: #2a2030; border-radius: 3px; }
+  </style>
+</head>
+<body class="font-sans text-gray-200 antialiased min-h-screen">
+
+  <!-- NAV -->
+ <header class="fixed top-0 left-0 right-0 z-50 border-b" style="background:rgba(8,5,10,0.88);backdrop-filter:blur(20px);border-color:rgba(255,255,255,0.07)">
+    <div class="max-w-5xl mx-auto px-6 h-14 flex items-center justify-between">
+      <a href="../" class="flex items-center gap-2.5 text-white no-underline">
+        <img src="../kita-logo.png" alt="Kita Logo" class="w-7 h-7 rounded-lg red-glow object-cover" style="border: 1px solid rgba(212,34,42,0.3)">
+        <span class="font-extrabold text-lg tracking-tight">kita</span>
+      </a>
+      <nav class="flex items-center gap-1">
+        <a href="./" class="font-mono text-xs px-3 py-1.5 rounded-md transition-colors font-medium" style="background:rgba(212,34,42,0.15);color:#ff8a8f;border:1px solid rgba(212,34,42,0.3)">Privacy Policy</a>
+        <a href="../tos/" class="font-mono text-xs px-3 py-1.5 rounded-md transition-colors" style="color:rgba(255,255,255,0.4);border:1px solid rgba(255,255,255,0.07)">Terms of Service</a>
+      </nav>
+    </div>
+ </header>
+
+  <!-- HERO -->
+  <section class="pt-32 pb-16 px-6 text-center relative overflow-hidden">
+    <div class="absolute inset-0 pointer-events-none" style="background:radial-gradient(ellipse 60% 40% at 50% 0%, rgba(212,34,42,0.1) 0%, transparent 70%)"></div>
+    <div class="relative z-10 max-w-2xl mx-auto">
+      <span class="inline-flex items-center gap-2 font-mono text-xs tracking-widest uppercase mb-5 px-3 py-1.5 rounded-full" style="color:#ff8a8f;background:rgba(212,34,42,0.08);border:1px solid rgba(212,34,42,0.2)">
+        <span class="w-1.5 h-1.5 rounded-full bg-red-400 animate-pulse"></span>
+        Legal Document
+      </span>
+      <h1 class="text-4xl sm:text-5xl font-black tracking-tight text-white mb-4">Privacy Policy</h1>
+      <p class="text-base text-gray-400 font-light leading-relaxed">
+        How <span class="text-white font-semibold">kita</span> collects, uses, and protects your data. We keep it simple and transparent.
+      </p>
+      <p class="font-mono text-xs mt-4" style="color:rgba(255,255,255,0.25)">Last updated: June 2026 · Effective immediately</p>
+    </div>
+  </section>
+
+  <!-- TOC -->
+  <div class="max-w-5xl mx-auto px-6 mb-12">
+    <div class="rounded-xl p-6" style="background:#100c12;border:1px solid rgba(255,255,255,0.07)">
+      <p class="font-mono text-xs text-gray-500 uppercase tracking-widest mb-4">Contents</p>
+      <div class="grid sm:grid-cols-2 gap-2">
+        <a href="#overview"    class="flex items-center gap-3 text-sm text-gray-400 hover:text-white transition-colors group">
+          <span class="font-mono text-xs w-5" style="color:#d4222a">01</span> Overview
+        </a>
+        <a href="#collection"  class="flex items-center gap-3 text-sm text-gray-400 hover:text-white transition-colors group">
+          <span class="font-mono text-xs w-5" style="color:#d4222a">02</span> Data We Collect
+        </a>
+        <a href="#usage"       class="flex items-center gap-3 text-sm text-gray-400 hover:text-white transition-colors group">
+          <span class="font-mono text-xs w-5" style="color:#d4222a">03</span> How We Use Your Data
+        </a>
+        <a href="#nostore"     class="flex items-center gap-3 text-sm text-gray-400 hover:text-white transition-colors group">
+          <span class="font-mono text-xs w-5" style="color:#d4222a">04</span> What We Don't Do
+        </a>
+        <a href="#storage"     class="flex items-center gap-3 text-sm text-gray-400 hover:text-white transition-colors group">
+          <span class="font-mono text-xs w-5" style="color:#d4222a">05</span> Data Storage & Security
+        </a>
+        <a href="#sharing"     class="flex items-center gap-3 text-sm text-gray-400 hover:text-white transition-colors group">
+          <span class="font-mono text-xs w-5" style="color:#d4222a">06</span> Third-Party Sharing
+        </a>
+        <a href="#intents"     class="flex items-center gap-3 text-sm text-gray-400 hover:text-white transition-colors group">
+          <span class="font-mono text-xs w-5" style="color:#d4222a">07</span> Privileged Intents
+        </a>
+        <a href="#deletion"    class="flex items-center gap-3 text-sm text-gray-400 hover:text-white transition-colors group">
+          <span class="font-mono text-xs w-5" style="color:#d4222a">08</span> Data Deletion
+        </a>
+        <a href="#minors"      class="flex items-center gap-3 text-sm text-gray-400 hover:text-white transition-colors group">
+          <span class="font-mono text-xs w-5" style="color:#d4222a">09</span> Minors
+        </a>
+        <a href="#changes"     class="flex items-center gap-3 text-sm text-gray-400 hover:text-white transition-colors group">
+          <span class="font-mono text-xs w-5" style="color:#d4222a">10</span> Policy Changes
+        </a>
+        <a href="#contact"     class="flex items-center gap-3 text-sm text-gray-400 hover:text-white transition-colors group">
+          <span class="font-mono text-xs w-5" style="color:#d4222a">11</span> Contact
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTENT -->
+  <main class="max-w-5xl mx-auto px-6 pb-24 space-y-8">
+
+    <!-- 01 Overview -->
+    <div id="overview" class="rounded-xl p-8 section-anchor" style="background:#100c12;border:1px solid rgba(255,255,255,0.07)">
+      <div class="flex items-center gap-3 mb-5">
+        <span class="font-mono text-xs font-medium px-2 py-0.5 rounded" style="color:#d4222a;background:rgba(212,34,42,0.1);border:1px solid rgba(212,34,42,0.2)">01</span>
+        <h2 class="text-xl font-bold tracking-tight text-white">Overview</h2>
+      </div>
+      <div class="space-y-4 text-gray-400 text-sm leading-relaxed font-light">
+        <p>This Privacy Policy explains how <strong class="text-white font-semibold">Kita</strong> ("the Bot", "we", "us") collects, uses, and safeguards information when you interact with the bot on Discord. By using Kita, you agree to the practices described in this policy.</p>
+        <p>Kita is a gacha-style card collection bot operated by an independent developer. We are committed to collecting only the minimum data necessary to operate the bot and provide you with the best possible experience.</p>
+        <p>This policy applies to all users who interact with Kita on any Discord server where it is present.</p>
+      </div>
+    </div>
+
+    <!-- 02 Collection -->
+    <div id="collection" class="rounded-xl p-8 section-anchor" style="background:#100c12;border:1px solid rgba(255,255,255,0.07)">
+      <div class="flex items-center gap-3 mb-5">
+        <span class="font-mono text-xs font-medium px-2 py-0.5 rounded" style="color:#d4222a;background:rgba(212,34,42,0.1);border:1px solid rgba(212,34,42,0.2)">02</span>
+        <h2 class="text-xl font-bold tracking-tight text-white">Data We Collect</h2>
+      </div>
+      <p class="text-gray-400 text-sm leading-relaxed font-light mb-6">Kita collects the following data as part of normal operation. All data is limited strictly to what is required to run the bot.</p>
+      <div class="space-y-4">
+
+        <div class="rounded-lg p-4" style="background:#161018;border:1px solid rgba(255,255,255,0.05)">
+          <div class="flex items-start gap-3">
+            <span class="text-lg mt-0.5">🪪</span>
+            <div>
+              <p class="text-white font-semibold text-sm mb-1">User IDs</p>
+              <p class="text-gray-400 text-sm font-light leading-relaxed">Your Discord User ID is stored to identify your account, link it to your card collection, track your pull history, and manage your in-game economy (coins, inventory, pity counters). This is a numeric identifier provided by Discord and contains no personally identifiable information.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="rounded-lg p-4" style="background:#161018;border:1px solid rgba(255,255,255,0.05)">
+          <div class="flex items-start gap-3">
+            <span class="text-lg mt-0.5">🏠</span>
+            <div>
+              <p class="text-white font-semibold text-sm mb-1">Server IDs</p>
+              <p class="text-gray-400 text-sm font-light leading-relaxed">Discord Server (Guild) IDs are stored to maintain per-server configurations, leaderboards, and server-specific gameplay settings. This allows Kita to function correctly across multiple servers without mixing data between communities.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="rounded-lg p-4" style="background:#161018;border:1px solid rgba(255,255,255,0.05)">
+          <div class="flex items-start gap-3">
+            <span class="text-lg mt-0.5">💬</span>
+            <div>
+              <p class="text-white font-semibold text-sm mb-1">Message Content <span class="font-mono text-xs ml-1 px-1.5 py-0.5 rounded" style="color:#ff8a8f;background:rgba(212,34,42,0.1)">(command processing only)</span></p>
+              <p class="text-gray-400 text-sm font-light leading-relaxed">Kita uses the <strong class="text-gray-300">Message Content Intent</strong> solely to detect and process prefix-based commands (e.g., <code class="font-mono text-xs px-1.5 py-0.5 rounded text-red-300" style="background:#1c181b">!pull</code>, <code class="font-mono text-xs px-1.5 py-0.5 rounded text-red-300" style="background:#1c181b">!collection</code>). Message content is read transiently in memory to parse commands and is <strong class="text-gray-300">never written to disk, logged, or retained</strong> in any form after the command has been processed.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="rounded-lg p-4" style="background:#161018;border:1px solid rgba(255,255,255,0.05)">
+          <div class="flex items-start gap-3">
+            <span class="text-lg mt-0.5">👥</span>
+            <div>
+              <p class="text-white font-semibold text-sm mb-1">Server Member Data <span class="font-mono text-xs ml-1 px-1.5 py-0.5 rounded" style="color:#ff8a8f;background:rgba(212,34,42,0.1)">(limited)</span></p>
+              <p class="text-gray-400 text-sm font-light leading-relaxed">Kita uses the <strong class="text-gray-300">Server Members Intent</strong> to access basic member information (User IDs and usernames) for features such as leaderboards, trading, and gifting cards to other users. No sensitive member data is stored or processed beyond what is necessary for these features.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- 03 Usage -->
+    <div id="usage" class="rounded-xl p-8 section-anchor" style="background:#100c12;border:1px solid rgba(255,255,255,0.07)">
+      <div class="flex items-center gap-3 mb-5">
+        <span class="font-mono text-xs font-medium px-2 py-0.5 rounded" style="color:#d4222a;background:rgba(212,34,42,0.1);border:1px solid rgba(212,34,42,0.2)">03</span>
+        <h2 class="text-xl font-bold tracking-tight text-white">How We Use Your Data</h2>
+      </div>
+      <p class="text-gray-400 text-sm leading-relaxed font-light mb-5">Data collected by Kita is used exclusively for the following gameplay and operational purposes:</p>
+      <ul class="space-y-3">
+        <li class="flex items-start gap-3 text-sm text-gray-400 font-light">
+          <span class="mt-1 w-1.5 h-1.5 rounded-full flex-shrink-0" style="background:#d4222a"></span>
+          Maintaining your card collection, inventory, and pull history
+        </li>
+        <li class="flex items-start gap-3 text-sm text-gray-400 font-light">
+          <span class="mt-1 w-1.5 h-1.5 rounded-full flex-shrink-0" style="background:#d4222a"></span>
+          Tracking your in-game economy (coins, gems, trade history)
+        </li>
+        <li class="flex items-start gap-3 text-sm text-gray-400 font-light">
+          <span class="mt-1 w-1.5 h-1.5 rounded-full flex-shrink-0" style="background:#d4222a"></span>
+          Managing pity counters and pull rate tracking
+        </li>
+        <li class="flex items-start gap-3 text-sm text-gray-400 font-light">
+          <span class="mt-1 w-1.5 h-1.5 rounded-full flex-shrink-0" style="background:#d4222a"></span>
+          Generating server and global leaderboards
+        </li>
+        <li class="flex items-start gap-3 text-sm text-gray-400 font-light">
+          <span class="mt-1 w-1.5 h-1.5 rounded-full flex-shrink-0" style="background:#d4222a"></span>
+          Processing card trades and gifts between users
+        </li>
+        <li class="flex items-start gap-3 text-sm text-gray-400 font-light">
+          <span class="mt-1 w-1.5 h-1.5 rounded-full flex-shrink-0" style="background:#d4222a"></span>
+          Enforcing blacklists and abuse prevention measures
+        </li>
+        <li class="flex items-start gap-3 text-sm text-gray-400 font-light">
+          <span class="mt-1 w-1.5 h-1.5 rounded-full flex-shrink-0" style="background:#d4222a"></span>
+          Storing per-server configuration preferences
+        </li>
+      </ul>
+    </div>
+
+    <!-- 04 What We Don't Do -->
+    <div id="nostore" class="rounded-xl p-8 section-anchor" style="background:#100c12;border:1px solid rgba(255,255,255,0.07)">
+      <div class="flex items-center gap-3 mb-5">
+        <span class="font-mono text-xs font-medium px-2 py-0.5 rounded" style="color:#d4222a;background:rgba(212,34,42,0.1);border:1px solid rgba(212,34,42,0.2)">04</span>
+        <h2 class="text-xl font-bold tracking-tight text-white">What We Don't Do</h2>
+      </div>
+      <p class="text-gray-400 text-sm leading-relaxed font-light mb-5">We want to be explicit about practices we do <strong class="text-white">not</strong> engage in:</p>
+      <div class="grid sm:grid-cols-2 gap-3">
+        <div class="rounded-lg p-4 flex items-start gap-3" style="background:#161018;border:1px solid rgba(255,255,255,0.05)">
+          <span class="text-green-400 mt-0.5 text-base">✗</span>
+          <p class="text-sm text-gray-400 font-light">We do <strong class="text-white">not</strong> log or store private (DM) conversations</p>
+        </div>
+        <div class="rounded-lg p-4 flex items-start gap-3" style="background:#161018;border:1px solid rgba(255,255,255,0.05)">
+          <span class="text-green-400 mt-0.5 text-base">✗</span>
+          <p class="text-sm text-gray-400 font-light">We do <strong class="text-white">not</strong> store message content beyond command processing</p>
+        </div>
+        <div class="rounded-lg p-4 flex items-start gap-3" style="background:#161018;border:1px solid rgba(255,255,255,0.05)">
+          <span class="text-green-400 mt-0.5 text-base">✗</span>
+          <p class="text-sm text-gray-400 font-light">We do <strong class="text-white">not</strong> sell, rent, or share your data with third parties</p>
+        </div>
+        <div class="rounded-lg p-4 flex items-start gap-3" style="background:#161018;border:1px solid rgba(255,255,255,0.05)">
+          <span class="text-green-400 mt-0.5 text-base">✗</span>
+          <p class="text-sm text-gray-400 font-light">We do <strong class="text-white">not</strong> use your data for advertising or marketing</p>
+        </div>
+        <div class="rounded-lg p-4 flex items-start gap-3" style="background:#161018;border:1px solid rgba(255,255,255,0.05)">
+          <span class="text-green-400 mt-0.5 text-base">✗</span>
+          <p class="text-sm text-gray-400 font-light">We do <strong class="text-white">not</strong> collect real names, emails, or contact information</p>
+        </div>
+        <div class="rounded-lg p-4 flex items-start gap-3" style="background:#161018;border:1px solid rgba(255,255,255,0.05)">
+          <span class="text-green-400 mt-0.5 text-base">✗</span>
+          <p class="text-sm text-gray-400 font-light">We do <strong class="text-white">not</strong> monitor or record voice channels</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 05 Storage -->
+    <div id="storage" class="rounded-xl p-8 section-anchor" style="background:#100c12;border:1px solid rgba(255,255,255,0.07)">
+      <div class="flex items-center gap-3 mb-5">
+        <span class="font-mono text-xs font-medium px-2 py-0.5 rounded" style="color:#d4222a;background:rgba(212,34,42,0.1);border:1px solid rgba(212,34,42,0.2)">05</span>
+        <h2 class="text-xl font-bold tracking-tight text-white">Data Storage & Security</h2>
+      </div>
+      <div class="space-y-4 text-gray-400 text-sm leading-relaxed font-light">
+        <p>All gameplay data is stored in a <strong class="text-white">SQLite database</strong> hosted on a secure server. The database contains only the data described in Section 02 — nothing more.</p>
+        <p>We implement reasonable technical safeguards to protect stored data from unauthorized access, including access controls, regular backups, and keeping the bot's token and database credentials private and secure.</p>
+        <p>Data is retained for as long as your account is active or as long as you are a member of a server where Kita is present. You may request deletion at any time — see Section 08.</p>
+        <div class="rounded-lg p-4 mt-2" style="background:#161018;border:1px solid rgba(212,34,42,0.15)">
+          <p class="text-xs font-mono" style="color:#ff8a8f">⚠ Note: As an independent developer project, Kita does not guarantee enterprise-level security. While we take reasonable precautions, we encourage you not to treat any Discord bot as a secure vault for sensitive personal information.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 06 Sharing -->
+    <div id="sharing" class="rounded-xl p-8 section-anchor" style="background:#100c12;border:1px solid rgba(255,255,255,0.07)">
+      <div class="flex items-center gap-3 mb-5">
+        <span class="font-mono text-xs font-medium px-2 py-0.5 rounded" style="color:#d4222a;background:rgba(212,34,42,0.1);border:1px solid rgba(212,34,42,0.2)">06</span>
+        <h2 class="text-xl font-bold tracking-tight text-white">Third-Party Sharing</h2>
+      </div>
+      <div class="space-y-4 text-gray-400 text-sm leading-relaxed font-light">
+        <p>We do not sell, trade, or transfer your data to any outside parties. Your data is never shared with third-party advertisers, analytics platforms, or data brokers.</p>
+        <p>The only third-party platform involved in Kita's operation is <strong class="text-white">Discord</strong> itself, which operates under its own <a href="https://discord.com/privacy" class="underline decoration-red-500/50 hover:decoration-red-400 transition-colors" style="color:#ff8a8f">Privacy Policy</a>. By using Discord, you are already subject to their terms.</p>
+        <p>We may disclose data if required to do so by law or in response to valid legal requests by public authorities.</p>
+      </div>
+    </div>
+
+    <!-- 07 Intents -->
+    <div id="intents" class="rounded-xl p-8 section-anchor" style="background:#100c12;border:1px solid rgba(255,255,255,0.07)">
+      <div class="flex items-center gap-3 mb-5">
+        <span class="font-mono text-xs font-medium px-2 py-0.5 rounded" style="color:#d4222a;background:rgba(212,34,42,0.1);border:1px solid rgba(212,34,42,0.2)">07</span>
+        <h2 class="text-xl font-bold tracking-tight text-white">Privileged Intents</h2>
+      </div>
+      <p class="text-gray-400 text-sm leading-relaxed font-light mb-5">Kita is approved for the following Discord Privileged Gateway Intents. Below is a plain-language explanation of exactly how each is used:</p>
+      <div class="space-y-4">
+        <div class="rounded-lg p-5" style="background:#161018;border:1px solid rgba(255,255,255,0.05)">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="font-mono text-xs font-semibold px-2 py-0.5 rounded" style="color:#ff8a8f;background:rgba(212,34,42,0.1)">MESSAGE CONTENT</span>
+          </div>
+          <p class="text-sm text-gray-400 font-light leading-relaxed"><strong class="text-white">Purpose:</strong> To read the content of messages and detect prefix-based commands directed at Kita (e.g., <code class="font-mono text-xs px-1 rounded" style="background:#1c181b;color:#ff8a8f">!pull</code>, <code class="font-mono text-xs px-1 rounded" style="background:#1c181b;color:#ff8a8f">!trade</code>). The bot reads message content transiently in memory, extracts the command and any arguments, executes the appropriate action, and immediately discards the content. It is never stored, logged, or analyzed beyond this single-use command parsing.</p>
+        </div>
+        <div class="rounded-lg p-5" style="background:#161018;border:1px solid rgba(255,255,255,0.05)">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="font-mono text-xs font-semibold px-2 py-0.5 rounded" style="color:#ff8a8f;background:rgba(212,34,42,0.1)">SERVER MEMBERS</span>
+          </div>
+          <p class="text-sm text-gray-400 font-light leading-relaxed"><strong class="text-white">Purpose:</strong> To access the member list of servers where Kita is installed. This is used to: (1) resolve user mentions in trading and gifting commands, (2) generate accurate server leaderboards, and (3) validate that trade targets are current members of the server. No member data is stored beyond User IDs, which are already collected as described in Section 02.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 08 Deletion -->
+    <div id="deletion" class="rounded-xl p-8 section-anchor" style="border:1px solid rgba(212,34,42,0.25);background:rgba(212,34,42,0.04)">
+      <div class="flex items-center gap-3 mb-5">
+        <span class="font-mono text-xs font-medium px-2 py-0.5 rounded" style="color:#d4222a;background:rgba(212,34,42,0.1);border:1px solid rgba(212,34,42,0.2)">08</span>
+        <h2 class="text-xl font-bold tracking-tight text-white">Data Deletion</h2>
+      </div>
+      <div class="space-y-4 text-gray-400 text-sm leading-relaxed font-light">
+        <p>You have the right to request the deletion of all data associated with your Discord User ID at any time. Upon a verified request, we will permanently remove your card collection, inventory, economy balance, pity counters, and all other associated gameplay data from our database.</p>
+        <p class="font-medium text-gray-300">To request a data wipe, you can:</p>
+        <div class="space-y-3 mt-3">
+          <div class="rounded-lg p-4 flex items-start gap-3" style="background:rgba(0,0,0,0.2);border:1px solid rgba(255,255,255,0.06)">
+            <span class="text-xl mt-0.5">💬</span>
+            <div>
+              <p class="text-white font-semibold text-sm mb-1">Join the Support Server</p>
+              <p class="text-gray-400 text-sm font-light">Join the official Kita support server on Discord and open a ticket or message a staff member requesting a data deletion. We will verify your identity and process the request promptly.</p>
+            </div>
+          </div>
+          <div class="rounded-lg p-4 flex items-start gap-3" style="background:rgba(0,0,0,0.2);border:1px solid rgba(255,255,255,0.06)">
+            <span class="text-xl mt-0.5">📩</span>
+            <div>
+              <p class="text-white font-semibold text-sm mb-1">Contact the Developer Directly</p>
+              <p class="text-gray-400 text-sm font-light">You may contact the developer directly via Discord or the contact methods listed in Section 11. Please include your Discord User ID in your request.</p>
+            </div>
+          </div>
+        </div>
+        <p class="text-xs font-mono mt-4" style="color:rgba(255,255,255,0.3)">Note: Data deletion is irreversible. Your card collection, coins, and progress cannot be recovered after deletion is processed. Deletion requests are typically fulfilled within 72 hours.</p>
+      </div>
+    </div>
+
+    <!-- 09 Minors -->
+    <div id="minors" class="rounded-xl p-8 section-anchor" style="background:#100c12;border:1px solid rgba(255,255,255,0.07)">
+      <div class="flex items-center gap-3 mb-5">
+        <span class="font-mono text-xs font-medium px-2 py-0.5 rounded" style="color:#d4222a;background:rgba(212,34,42,0.1);border:1px solid rgba(212,34,42,0.2)">09</span>
+        <h2 class="text-xl font-bold tracking-tight text-white">Minors</h2>
+      </div>
+      <div class="space-y-3 text-gray-400 text-sm leading-relaxed font-light">
+        <p>Kita is intended for users who meet Discord's minimum age requirement (13 years of age, or older depending on your country of residence). By using Kita, you confirm that you meet the applicable minimum age requirement set by Discord's Terms of Service.</p>
+        <p>We do not knowingly collect data from users who do not meet these age requirements. If you believe a user under the applicable minimum age is using Kita and providing us with data, please contact us so we can take appropriate action.</p>
+      </div>
+    </div>
+
+    <!-- 10 Changes -->
+    <div id="changes" class="rounded-xl p-8 section-anchor" style="background:#100c12;border:1px solid rgba(255,255,255,0.07)">
+      <div class="flex items-center gap-3 mb-5">
+        <span class="font-mono text-xs font-medium px-2 py-0.5 rounded" style="color:#d4222a;background:rgba(212,34,42,0.1);border:1px solid rgba(212,34,42,0.2)">10</span>
+        <h2 class="text-xl font-bold tracking-tight text-white">Policy Changes</h2>
+      </div>
+      <div class="space-y-3 text-gray-400 text-sm leading-relaxed font-light">
+        <p>We may update this Privacy Policy from time to time as Kita's features evolve or as legal requirements change. When we make material changes, we will update the "Last updated" date at the top of this page and announce changes in our official support server.</p>
+        <p>Continued use of Kita after a policy update constitutes your acceptance of the revised terms. We encourage you to review this page periodically.</p>
+      </div>
+    </div>
+
+    <!-- 11 Contact -->
+    <div id="contact" class="rounded-xl p-8 section-anchor" style="background:#100c12;border:1px solid rgba(255,255,255,0.07)">
+      <div class="flex items-center gap-3 mb-5">
+        <span class="font-mono text-xs font-medium px-2 py-0.5 rounded" style="color:#d4222a;background:rgba(212,34,42,0.1);border:1px solid rgba(212,34,42,0.2)">11</span>
+        <h2 class="text-xl font-bold tracking-tight text-white">Contact</h2>
+      </div>
+      <p class="text-gray-400 text-sm leading-relaxed font-light mb-5">If you have any questions, concerns, or requests regarding this Privacy Policy or your data, please reach out through one of the following channels:</p>
+      <div class="grid sm:grid-cols-2 gap-4">
+        <div class="rounded-lg p-4" style="background:#161018;border:1px solid rgba(255,255,255,0.05)">
+          <p class="text-white font-semibold text-sm mb-1">Support Server</p>
+          <p class="text-gray-400 text-sm font-light">Join the official Kita Discord server and open a support ticket or contact a staff member.</p>
+        </div>
+        <div class="rounded-lg p-4" style="background:#161018;border:1px solid rgba(255,255,255,0.05)">
+          <p class="text-white font-semibold text-sm mb-1">Developer Contact</p>
+          <p class="text-gray-400 text-sm font-light">Contact the developer directly via Discord DM. User handle available in the support server.</p>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="border-t" style="border-color:rgba(255,255,255,0.07)">
+    <div class="max-w-5xl mx-auto px-6 py-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-2">
+        <div class="w-6 h-6 rounded-md flex items-center justify-center text-white font-black text-xs red-glow" style="background:#d4222a">K</div>
+        <span class="font-extrabold text-sm tracking-tight text-white">kita</span>
+      </div>
+      <div class="flex items-center gap-6">
+        <a href="privacy.html" class="font-mono text-xs transition-colors" style="color:#ff8a8f">Privacy Policy</a>
+        <a href="tos.html" class="font-mono text-xs text-gray-500 hover:text-gray-300 transition-colors">Terms of Service</a>
+      </div>
+      <p class="font-mono text-xs text-gray-600">© 2026 Kita. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
