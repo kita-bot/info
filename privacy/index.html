@@ -32,7 +32,7 @@
   <style>
     body { background-color: #08050a; }
     .red-glow { box-shadow: 0 0 24px rgba(212,34,42,0.25); }
-    .section-anchor { scroll-margin-top: 80px; }
+    .section-anchor { scroll-margin-top: 100px; }
     ::-webkit-scrollbar { width: 6px; }
     ::-webkit-scrollbar-track { background: transparent; }
     ::-webkit-scrollbar-thumb { background: #2a2030; border-radius: 3px; }
@@ -40,22 +40,36 @@
 </head>
 <body class="font-sans text-gray-200 antialiased min-h-screen">
 
-  <!-- NAV -->
- <header class="fixed top-0 left-0 right-0 z-50 border-b" style="background:rgba(8,5,10,0.88);backdrop-filter:blur(20px);border-color:rgba(255,255,255,0.07)">
-    <div class="max-w-5xl mx-auto px-6 h-14 flex items-center justify-between">
-      <a href="../" class="flex items-center gap-2.5 text-white no-underline">
-        <img src="../kita-logo.png" alt="Kita Logo" class="w-7 h-7 rounded-lg red-glow object-cover" style="border: 1px solid rgba(212,34,42,0.3)">
-        <span class="font-extrabold text-lg tracking-tight">kita</span>
-      </a>
-      <nav class="flex items-center gap-1">
-        <a href="./" class="font-mono text-xs px-3 py-1.5 rounded-md transition-colors font-medium" style="background:rgba(212,34,42,0.15);color:#ff8a8f;border:1px solid rgba(212,34,42,0.3)">Privacy Policy</a>
-        <a href="../tos/" class="font-mono text-xs px-3 py-1.5 rounded-md transition-colors" style="color:rgba(255,255,255,0.4);border:1px solid rgba(255,255,255,0.07)">Terms of Service</a>
-      </nav>
-    </div>
- </header>
+  <header class="fixed top-6 left-0 right-0 z-50 px-6 pointer-events-none">
+    <div class="max-w-3xl mx-auto pointer-events-auto relative">
+      <div class="h-16 rounded-2xl flex items-center justify-between px-5 transition-all duration-300"
+           style="background: rgba(16, 12, 18, 0.4); backdrop-filter: blur(24px); -webkit-backdrop-filter: blur(24px); border: 1px solid rgba(255,255,255,0.08); box-shadow: 0 8px 32px rgba(0,0,0,0.3);">
+        
+        <a href="../" class="flex items-center gap-3 text-white no-underline group">
+          <img src="../kita-logo.png" alt="Kita Logo" class="w-9 h-9 rounded-xl red-glow object-cover transition-transform duration-300 group-hover:scale-105" style="border: 1px solid rgba(212,34,42,0.4)">
+          <span class="font-extrabold text-lg tracking-tight">kita</span>
+        </a>
 
-  <!-- HERO -->
-  <section class="pt-32 pb-16 px-6 text-center relative overflow-hidden">
+        <button id="menu-btn" class="text-gray-400 hover:text-white transition-colors p-2 rounded-xl hover:bg-white/5 outline-none">
+          <i data-lucide="menu" class="w-6 h-6"></i>
+        </button>
+      </div>
+
+      <div id="dropdown-menu" class="absolute top-full right-0 mt-3 w-56 rounded-xl opacity-0 invisible translate-y-[-10px] transition-all duration-300 origin-top-right"
+           style="background: rgba(16, 12, 18, 0.7); backdrop-filter: blur(24px); -webkit-backdrop-filter: blur(24px); border: 1px solid rgba(255,255,255,0.08); box-shadow: 0 12px 40px rgba(0,0,0,0.5);">
+        <div class="p-2 flex flex-col gap-1">
+          <a href="./" class="flex items-center gap-3 font-mono text-xs px-3 py-3 rounded-lg transition-colors font-medium" style="background:rgba(212,34,42,0.15);color:#ff8a8f;border:1px solid rgba(212,34,42,0.3)">
+            <i data-lucide="shield-check" class="w-4 h-4"></i> Privacy Policy
+          </a>
+          <a href="../tos/" class="flex items-center gap-3 font-mono text-xs px-3 py-3 rounded-lg text-gray-400 hover:text-white hover:bg-white/5 transition-colors">
+            <i data-lucide="file-text" class="w-4 h-4"></i> Terms of Service
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="pt-40 pb-16 px-6 text-center relative overflow-hidden">
     <div class="absolute inset-0 pointer-events-none" style="background:radial-gradient(ellipse 60% 40% at 50% 0%, rgba(212,34,42,0.1) 0%, transparent 70%)"></div>
     <div class="relative z-10 max-w-2xl mx-auto">
       <span class="inline-flex items-center gap-2 font-mono text-xs tracking-widest uppercase mb-5 px-3 py-1.5 rounded-full" style="color:#ff8a8f;background:rgba(212,34,42,0.08);border:1px solid rgba(212,34,42,0.2)">
@@ -70,7 +84,6 @@
     </div>
   </section>
 
-  <!-- TOC -->
   <div class="max-w-5xl mx-auto px-6 mb-12">
     <div class="rounded-xl p-6" style="background:#100c12;border:1px solid rgba(255,255,255,0.07)">
       <p class="font-mono text-xs text-gray-500 uppercase tracking-widest mb-4">Contents</p>
@@ -112,10 +125,8 @@
     </div>
   </div>
 
-  <!-- CONTENT -->
   <main class="max-w-5xl mx-auto px-6 pb-24 space-y-8">
 
-    <!-- 01 Overview -->
     <div id="overview" class="rounded-xl p-8 section-anchor" style="background:#100c12;border:1px solid rgba(255,255,255,0.07)">
       <div class="flex items-center gap-3 mb-5">
         <span class="font-mono text-xs font-medium px-2 py-0.5 rounded" style="color:#d4222a;background:rgba(212,34,42,0.1);border:1px solid rgba(212,34,42,0.2)">01</span>
@@ -128,7 +139,6 @@
       </div>
     </div>
 
-    <!-- 02 Collection -->
     <div id="collection" class="rounded-xl p-8 section-anchor" style="background:#100c12;border:1px solid rgba(255,255,255,0.07)">
       <div class="flex items-center gap-3 mb-5">
         <span class="font-mono text-xs font-medium px-2 py-0.5 rounded" style="color:#d4222a;background:rgba(212,34,42,0.1);border:1px solid rgba(212,34,42,0.2)">02</span>
@@ -180,7 +190,6 @@
       </div>
     </div>
 
-    <!-- 03 Usage -->
     <div id="usage" class="rounded-xl p-8 section-anchor" style="background:#100c12;border:1px solid rgba(255,255,255,0.07)">
       <div class="flex items-center gap-3 mb-5">
         <span class="font-mono text-xs font-medium px-2 py-0.5 rounded" style="color:#d4222a;background:rgba(212,34,42,0.1);border:1px solid rgba(212,34,42,0.2)">03</span>
@@ -219,7 +228,6 @@
       </ul>
     </div>
 
-    <!-- 04 What We Don't Do -->
     <div id="nostore" class="rounded-xl p-8 section-anchor" style="background:#100c12;border:1px solid rgba(255,255,255,0.07)">
       <div class="flex items-center gap-3 mb-5">
         <span class="font-mono text-xs font-medium px-2 py-0.5 rounded" style="color:#d4222a;background:rgba(212,34,42,0.1);border:1px solid rgba(212,34,42,0.2)">04</span>
@@ -254,7 +262,6 @@
       </div>
     </div>
 
-    <!-- 05 Storage -->
     <div id="storage" class="rounded-xl p-8 section-anchor" style="background:#100c12;border:1px solid rgba(255,255,255,0.07)">
       <div class="flex items-center gap-3 mb-5">
         <span class="font-mono text-xs font-medium px-2 py-0.5 rounded" style="color:#d4222a;background:rgba(212,34,42,0.1);border:1px solid rgba(212,34,42,0.2)">05</span>
@@ -270,7 +277,6 @@
       </div>
     </div>
 
-    <!-- 06 Sharing -->
     <div id="sharing" class="rounded-xl p-8 section-anchor" style="background:#100c12;border:1px solid rgba(255,255,255,0.07)">
       <div class="flex items-center gap-3 mb-5">
         <span class="font-mono text-xs font-medium px-2 py-0.5 rounded" style="color:#d4222a;background:rgba(212,34,42,0.1);border:1px solid rgba(212,34,42,0.2)">06</span>
@@ -283,7 +289,6 @@
       </div>
     </div>
 
-    <!-- 07 Intents -->
     <div id="intents" class="rounded-xl p-8 section-anchor" style="background:#100c12;border:1px solid rgba(255,255,255,0.07)">
       <div class="flex items-center gap-3 mb-5">
         <span class="font-mono text-xs font-medium px-2 py-0.5 rounded" style="color:#d4222a;background:rgba(212,34,42,0.1);border:1px solid rgba(212,34,42,0.2)">07</span>
@@ -306,7 +311,6 @@
       </div>
     </div>
 
-    <!-- 08 Deletion -->
     <div id="deletion" class="rounded-xl p-8 section-anchor" style="border:1px solid rgba(212,34,42,0.25);background:rgba(212,34,42,0.04)">
       <div class="flex items-center gap-3 mb-5">
         <span class="font-mono text-xs font-medium px-2 py-0.5 rounded" style="color:#d4222a;background:rgba(212,34,42,0.1);border:1px solid rgba(212,34,42,0.2)">08</span>
@@ -335,7 +339,6 @@
       </div>
     </div>
 
-    <!-- 09 Minors -->
     <div id="minors" class="rounded-xl p-8 section-anchor" style="background:#100c12;border:1px solid rgba(255,255,255,0.07)">
       <div class="flex items-center gap-3 mb-5">
         <span class="font-mono text-xs font-medium px-2 py-0.5 rounded" style="color:#d4222a;background:rgba(212,34,42,0.1);border:1px solid rgba(212,34,42,0.2)">09</span>
@@ -347,7 +350,6 @@
       </div>
     </div>
 
-    <!-- 10 Changes -->
     <div id="changes" class="rounded-xl p-8 section-anchor" style="background:#100c12;border:1px solid rgba(255,255,255,0.07)">
       <div class="flex items-center gap-3 mb-5">
         <span class="font-mono text-xs font-medium px-2 py-0.5 rounded" style="color:#d4222a;background:rgba(212,34,42,0.1);border:1px solid rgba(212,34,42,0.2)">10</span>
@@ -359,7 +361,6 @@
       </div>
     </div>
 
-    <!-- 11 Contact -->
     <div id="contact" class="rounded-xl p-8 section-anchor" style="background:#100c12;border:1px solid rgba(255,255,255,0.07)">
       <div class="flex items-center gap-3 mb-5">
         <span class="font-mono text-xs font-medium px-2 py-0.5 rounded" style="color:#d4222a;background:rgba(212,34,42,0.1);border:1px solid rgba(212,34,42,0.2)">11</span>
@@ -380,7 +381,6 @@
 
   </main>
 
-  <!-- FOOTER -->
   <footer class="border-t" style="border-color:rgba(255,255,255,0.07)">
     <div class="max-w-5xl mx-auto px-6 py-8 flex flex-col sm:flex-row items-center justify-between gap-4">
       <div class="flex items-center gap-2">
@@ -396,7 +396,26 @@
  </footer>
 
  <script>
+    // Initialize Lucide Icons
     lucide.createIcons();
+
+    // Floating Glass Navbar Dropdown Logic
+    const menuBtn = document.getElementById('menu-btn');
+    const dropdownMenu = document.getElementById('dropdown-menu');
+
+    menuBtn.addEventListener('click', (e) => {
+      e.stopPropagation(); // Prevents the click from immediately triggering the document listener
+      dropdownMenu.classList.toggle('opacity-0');
+      dropdownMenu.classList.toggle('invisible');
+      dropdownMenu.classList.toggle('translate-y-[-10px]');
+    });
+
+    // Close dropdown when clicking anywhere outside
+    document.addEventListener('click', (e) => {
+      if (!menuBtn.contains(e.target) && !dropdownMenu.contains(e.target)) {
+        dropdownMenu.classList.add('opacity-0', 'invisible', 'translate-y-[-10px]');
+      }
+    });
  </script>
 </body>
 </html>
