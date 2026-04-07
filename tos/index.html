@@ -41,18 +41,34 @@
 <body class="font-sans text-gray-200 antialiased min-h-screen">
 
   <!-- NAV -->
-  <header class="fixed top-0 left-0 right-0 z-50 border-b" style="background:rgba(8,5,10,0.88);backdrop-filter:blur(20px);border-color:rgba(255,255,255,0.07)">
-    <div class="max-w-5xl mx-auto px-6 h-14 flex items-center justify-between">
-      <a href="../" class="flex items-center gap-2.5 text-white no-underline">
-        <img src="../kita-logo.png" alt="Kita Logo" class="w-7 h-7 rounded-lg red-glow object-cover" style="border: 1px solid rgba(212,34,42,0.3)">
-        <span class="font-extrabold text-lg tracking-tight">kita</span>
-      </a>
-      <nav class="flex items-center gap-1">
-        <a href="../privacy/" class="font-mono text-xs px-3 py-1.5 rounded-md transition-colors" style="color:rgba(255,255,255,0.4);border:1px solid rgba(255,255,255,0.07)">Privacy Policy</a>
-        <a href="./" class="font-mono text-xs px-3 py-1.5 rounded-md transition-colors font-medium" style="background:rgba(212,34,42,0.15);color:#ff8a8f;border:1px solid rgba(212,34,42,0.3)">Terms of Service</a>
-      </nav>
+  <header class="fixed top-6 left-0 right-0 z-50 px-6 pointer-events-none">
+    <div class="max-w-3xl mx-auto pointer-events-auto relative">
+      <div class="h-16 rounded-2xl flex items-center justify-between px-5 transition-all duration-300"
+           style="background: rgba(16, 12, 18, 0.4); backdrop-filter: blur(24px); -webkit-backdrop-filter: blur(24px); border: 1px solid rgba(255,255,255,0.08); box-shadow: 0 8px 32px rgba(0,0,0,0.3);">
+        
+        <a href="../" class="flex items-center gap-3 text-white no-underline group">
+          <img src="../kita-logo.png" alt="Kita Logo" class="w-9 h-9 rounded-xl red-glow object-cover transition-transform duration-300 group-hover:scale-105" style="border: 1px solid rgba(212,34,42,0.4)">
+          <span class="font-extrabold text-lg tracking-tight">kita</span>
+        </a>
+
+        <button id="menu-btn" class="text-gray-400 hover:text-white transition-colors p-2 rounded-xl hover:bg-white/5 outline-none">
+          <i data-lucide="menu" class="w-6 h-6"></i>
+        </button>
+      </div>
+
+      <div id="dropdown-menu" class="absolute top-full right-0 mt-3 w-56 rounded-xl opacity-0 invisible translate-y-[-10px] transition-all duration-300 origin-top-right"
+           style="background: rgba(16, 12, 18, 0.7); backdrop-filter: blur(24px); -webkit-backdrop-filter: blur(24px); border: 1px solid rgba(255,255,255,0.08); box-shadow: 0 12px 40px rgba(0,0,0,0.5);">
+        <div class="p-2 flex flex-col gap-1">
+          <a href="../privacy/" class="flex items-center gap-3 font-mono text-xs px-3 py-3 rounded-lg text-gray-400 hover:text-white hover:bg-white/5 transition-colors">
+            <i data-lucide="shield-check" class="w-4 h-4"></i> Privacy Policy
+          </a>
+          <a href="./" class="flex items-center gap-3 font-mono text-xs px-3 py-3 rounded-lg transition-colors font-medium" style="background:rgba(212,34,42,0.15);color:#ff8a8f;border:1px solid rgba(212,34,42,0.3)">
+            <i data-lucide="file-text" class="w-4 h-4"></i> Terms of Service
+          </a>
+        </div>
+      </div>
     </div>
- </header>
+  </header>
 
   <!-- HERO -->
   <section class="pt-32 pb-16 px-6 text-center relative overflow-hidden">
@@ -445,8 +461,24 @@
       <p class="font-mono text-xs text-gray-600">© 2026 Kita. All rights reserved.</p>
     </div>
  </footer>
-<script>
+ <script>
     lucide.createIcons();
+
+    const menuBtn = document.getElementById('menu-btn');
+    const dropdownMenu = document.getElementById('dropdown-menu');
+
+    menuBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      dropdownMenu.classList.toggle('opacity-0');
+      dropdownMenu.classList.toggle('invisible');
+      dropdownMenu.classList.toggle('translate-y-[-10px]');
+    });
+
+    document.addEventListener('click', (e) => {
+      if (!menuBtn.contains(e.target) && !dropdownMenu.contains(e.target)) {
+        dropdownMenu.classList.add('opacity-0', 'invisible', 'translate-y-[-10px]');
+      }
+    });
  </script>
 </body>
 </html>
