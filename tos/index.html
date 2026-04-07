@@ -72,7 +72,7 @@
   <!-- AGREEMENT BANNER -->
   <div class="max-w-5xl mx-auto px-6 mb-8">
     <div class="rounded-xl p-5 flex items-start gap-4" style="background:rgba(212,34,42,0.05);border:1px solid rgba(212,34,42,0.2)">
-      <span class="text-2xl mt-0.5 flex-shrink-0">📋</span>
+      <span class="text-2xl mt-0.5 flex-shrink-0"><i data-lucide="notepad-text" class="w-6 h-6 text-red3 mt-0.5 flex-shrink-0"></i></span>
       <div>
         <p class="text-white font-semibold text-sm mb-1">Agreement to Terms</p>
         <p class="text-gray-400 text-sm font-light leading-relaxed">By adding Kita to your server or using any of its commands, you acknowledge that you have read, understood, and agree to be bound by these Terms of Service. If you do not agree, please remove Kita from your server and discontinue use immediately.</p>
@@ -294,17 +294,17 @@
         <p>Blacklisting may be applied at the <strong class="text-white">user level</strong> (preventing a specific user from using any Kita commands) or the <strong class="text-white">server level</strong> (removing Kita's functionality from an entire server).</p>
         <div class="grid sm:grid-cols-3 gap-3 mt-4">
           <div class="rounded-lg p-4 text-center" style="background:#161018;border:1px solid rgba(255,255,255,0.05)">
-            <div class="text-2xl mb-2">⚠️</div>
+            <div class="text-2xl mb-2"><i data-lucide="shield-alert" class="w-6 h-6 text-red3 mt-0.5 flex-shrink-0"></i></div>
             <p class="text-white font-semibold text-sm mb-1">Warning</p>
             <p class="text-xs text-gray-500 font-light">Minor first-time violations may receive a warning at the developer's discretion</p>
           </div>
           <div class="rounded-lg p-4 text-center" style="background:#161018;border:1px solid rgba(255,255,255,0.05)">
-            <div class="text-2xl mb-2">⏸️</div>
+            <div class="text-2xl mb-2"><i data-lucide="square-pause" class="w-6 h-6 text-red3 mt-0.5 flex-shrink-0"></i></div>
             <p class="text-white font-semibold text-sm mb-1">Temporary Ban</p>
             <p class="text-xs text-gray-500 font-light">Moderate violations may result in a temporary suspension from Kita</p>
           </div>
           <div class="rounded-lg p-4 text-center" style="background:#161018;border:1px solid rgba(212,34,42,0.15)">
-            <div class="text-2xl mb-2">🚫</div>
+            <div class="text-2xl mb-2"><i data-lucide="ban" class="w-6 h-6 text-red3 mt-0.5 flex-shrink-0"></i></div>
             <p class="font-semibold text-sm mb-1" style="color:#ff4a52">Permanent Blacklist</p>
             <p class="text-xs text-gray-500 font-light">Severe violations (selfbot, RMT, exploits) result in an immediate permanent ban</p>
           </div>
@@ -444,6 +444,8 @@
       <p class="font-mono text-xs text-gray-600">© 2026 Kita. All rights reserved.</p>
     </div>
  </footer>
-
+<script>
+    lucide.createIcons();
+ </script>
 </body>
 </html>
